@@ -1,0 +1,15 @@
+br\dev\marco\domain\dto\AtualizaStatusDTO.class
+br\dev\marco\OsApiApplication\api\exceptionhandler\ProblemaException.class
+br\dev\marco\OsApiApplication\api\exceptionhandler\ProblemaException$CampoProblema.class
+br\dev\marco\OsApiApplication\domain\model\Cliente.class
+br\dev\marco\OsApiApplication\domain\repository\OrdemServicoRepository.class
+br\dev\marco\OsApiApplication\domain\service\ClienteService.class
+br\dev\marco\OsApiApplication\domain\model\OrdemServico.class
+br\dev\marco\OsApiApplication\api\controller\ClienteController.class
+br\dev\marco\OsApiApplication\api\exceptionhandler\ApiExceptionHandler.class
+br\dev\marco\OsApiApplication\domain\model\StatusOrdemServico.class
+br\dev\marco\OsApiApplication\api\controller\OrdemServicoController.class
+br\dev\marco\OsApiApplication\domain\service\OrdemServicoService.class
+br\dev\marco\OsApiApplication\domain\repository\ClienteRepository.class
+br\dev\marco\OsApiApplication\OsApiApplication.class
+br\dev\marco\OsApiApplication\domain\exception\DomainException.class

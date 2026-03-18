@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
-package br.dev.marco.OSApiApplication.domain.repository;
 
-/**
- *
- * @author sesi3dib
- */
-public interface ClienteRepository {
+package br.dev.marco.OsApiApplication.domain.repository;
+
+import br.dev.marco.OsApiApplication.domain.model.Cliente;
+import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {
     
+    List<Cliente> findByNome(String nome);
+    List<Cliente> findByNomeContaining(String nome);
+    Cliente findByEmail(String email);
 }

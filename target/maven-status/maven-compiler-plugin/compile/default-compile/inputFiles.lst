@@ -1,0 +1,14 @@
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\domain\dto\AtualizaStatusDTO.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\api\controller\ClienteController.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\api\controller\OrdemServicoController.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\api\exceptionhandler\ApiExceptionHandler.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\api\exceptionhandler\ProblemaException.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\domain\exception\DomainException.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\domain\model\Cliente.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\domain\model\OrdemServico.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\domain\model\StatusOrdemServico.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\domain\repository\ClienteRepository.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\domain\repository\OrdemServicoRepository.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\domain\service\ClienteService.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\domain\service\OrdemServicoService.java
+C:\Users\sesi3dib\Documents\NetBeansProjects\marcao\OsApiApplication\src\main\java\br\dev\marco\OsApiApplication\OsApiApplication.java
