@@ -1,4 +1,4 @@
-package br.dev.marco.OSApiApplication;
+package br.dev.marco.OsApiApplication;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

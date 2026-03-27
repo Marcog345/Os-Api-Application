@@ -1,4 +1,4 @@
-package br.dev.marco.OSApiApplication;
+package br.dev.marco.OsApiApplication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
