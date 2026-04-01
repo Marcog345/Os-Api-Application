@@ -3,6 +3,9 @@ package br.dev.marco.OsApiApplication.api.controller;
 import br.dev.marco.OsApiApplication.domain.model.Cliente;
 import br.dev.marco.OsApiApplication.domain.repository.ClienteRepository;
 import br.dev.marco.OsApiApplication.domain.service.ClienteService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,13 +29,21 @@ public class ClienteController {
     
     @Autowired
     private ClienteService clienteService;
-
+    
+    @Operation(summary = "Buscar todos os clientes existentes", description = "Buscar todos os clientes")
+    @ApiResponses(value = {
+    @ApiResponse(responseCode = "200", description = "Successfully retrieved"),
+    @ApiResponse(responseCode = "404", description = "Not found - The product was not found")
+ })
+    
     @GetMapping("/clientes")
     public List<Cliente> listas() {
         return clienteRepository.findAll();
     }
 
     @GetMapping("/clientes/{clienteID}")
+    
+     @Operation(summary = "Buscar um cliente por id", description = "Buscar um unico cliente")
     public ResponseEntity<Cliente> buscar(@PathVariable Long clienteID) {
 
         Optional<Cliente> cliente = clienteRepository.findById(clienteID);
@@ -44,14 +55,14 @@ public class ClienteController {
         }
         
     }
-
+ @Operation(summary = "Adicionar um cliente", description = "adicionar cliente")
     @PostMapping("/clientes")
     @ResponseStatus(HttpStatus.CREATED)
     public Cliente adicionar(@Valid @RequestBody Cliente cliente) {
 
         return clienteService.salvar(cliente);
     }
-    
+     @Operation(summary = "Atualizar um cliente", description = "atualizar um cliente")
     @PutMapping("/clientes/{clienteID}")
     public ResponseEntity<Cliente> atualizar (@Valid @PathVariable Long clienteID, 
                                                      @RequestBody Cliente cliente) {
@@ -63,6 +74,7 @@ public class ClienteController {
         cliente = clienteService.salvar(cliente);
         return ResponseEntity.ok(cliente);
     }
+     @Operation(summary = "Excluir um cliente", description = "excluir um cliente")
        @DeleteMapping("/clientes/{clienteID}")
     public ResponseEntity<Void> excluir(@PathVariable Long clienteID) {
 

@@ -4,16 +4,11 @@ import br.dev.marco.OsApiApplication.domain.exception.DomainException;
 import br.dev.marco.OsApiApplication.domain.model.OrdemServico;
 import br.dev.marco.OsApiApplication.domain.model.StatusOrdemServico;
 import br.dev.marco.OsApiApplication.domain.repository.OrdemServicoRepository;
-import br.dev.marco.domain.dto.AtualizaStatusDTO;
-import jakarta.validation.Valid;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @Service
 public class OrdemServicoService {
@@ -62,5 +57,8 @@ public Optional<OrdemServico> atualizaStatus(Long ordemServicoID, StatusOrdemSer
         // Lança exception se ID não encontrado.
         throw new DomainException("Não existe OS com o id " + ordemServicoID);
     }
+}
+public List<OrdemServico> listarPorCliente(Long clienteId) {
+    return ordemServicoRepository.findByClienteId(clienteId);
 }
 }
